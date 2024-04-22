@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  images: {
+    domains: ['cdn.weatherapi.com'],
+  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +10,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'Montserrat': ['Montserrat', 'sans-serif'],
+        'Raleway': ['Raleway', 'sans-serif'],
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
